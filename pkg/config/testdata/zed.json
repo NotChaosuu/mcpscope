@@ -1,0 +1,5 @@
+{
+  "context_servers": {
+    "my-server": { "command": "uvx", "args": ["some-pkg"] }
+  }
+}

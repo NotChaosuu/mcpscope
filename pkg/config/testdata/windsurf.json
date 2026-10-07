@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "remote-http-mcp": {
+      "serverUrl": "https://example.com/mcp",
+      "headers": { "API_KEY": "value" }
+    }
+  }
+}
